@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <br> <form>
-        
-        <h1 style="font-family:cursive" class="l1">
-            Log in
-        </h1>
-        <div>
-        <img src="img/dn1.jpg" class="logol">
-</div>
-    <div class="ltxt">
-        <label for="fname"><b>Username</b></label><br>
-         <input type="text" id="fname" name="fname"><br>
-<br>
-         <label for="fpass"><b>Password</b></label><br>
-         <input type="password" id="fpass" name="fpass"><br>
-             <br>         
-                 <button type="submit" style="background-color: green"><b>Login</b></button><br>
-                 <label>
-                     <input type="checkbox" checked="checked" name="remember">Remember me
-                    </label>
-                    </div>
-                <div class="container" style="background-color: #f1f1f1;">
-                    <button type="button" class="clcbtn">
-                        <span class="psw"><a href="#">Forget Password</a></span></div> </button>
-            
-</form>
+    <h1 style="font-family: cursive; text-align:center;">Login page</h1>
+      <!--Step 1 : Adding HTML-->
+      <form>
+            <div class="imgcontainer">
+                <img src="./img/logo1.jpg" alt="Sports" class="avatar">
+            </div>
+            <center>
+                <div class="container">
+                <label style="font-family: futura;"><b>Username</b></label>
+                <br>
+                <input type="text" name="Username" style="width: 500px; border-radius:5px;" placeholder="Enter Username" required>
+                <br>
+
+                <label style="font-family: futura;"><b>Password</b></label><br>
+                <input style="width: 500px; border-radius:5px;" type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+
+                <button onsubmit="login_click()" style="width: 500px; border-radius:10px;" type="submit">Login</button><br>
+                <input type="checkbox" checked="checked">Remember me 
+            </div>
+            </center>
+
+            <div class="container" style="background-color: white;">
+                <button style="border-radius: 5px;" onclick="on_click()" type="button" class="cancelbtn">Cancel</button>
+
+                <span class="psw"><a href="http://127.0.0.1:5500/02_web/regstpg.html">Forget Password</a></span>
+            </div>
+        </form>
+        <!-- Scripts -->
+        <script src="../JS/login.js"></script>
+        <script src="../JS/register.js"></script>
 </body>
 </html>
